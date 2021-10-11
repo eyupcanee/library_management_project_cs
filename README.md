@@ -5,9 +5,9 @@
 Library Managament(ERP) Project
 
 ## Used NuGet Packages:
->EntityFramework 6
->Microsoft.EntityFrameworkCore
->Microsoft.EntityFrameworkCore.SqlServer
-For Design:
+>EntityFramework 6  
+>Microsoft.EntityFrameworkCore  
+>Microsoft.EntityFrameworkCore.SqlServer  
+For Design:  
 >FontAwesome.Sharp
 

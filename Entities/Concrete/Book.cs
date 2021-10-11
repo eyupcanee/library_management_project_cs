@@ -23,13 +23,5 @@ namespace Entities.Concrete
 
         public int WriterID { get; set; }
 
-        //Relations
-        /*
-        public virtual Writer Writer { get; set
-
-        public virtual Publisher Publisher { get; set; }
-
-        public ICollection<BorrowedBook> BorrowedBook { get; set; }
-        */
     }
 }

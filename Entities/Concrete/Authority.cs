@@ -14,10 +14,6 @@ namespace Entities.Concrete
         public string AutName { get; set; }
 
         public bool Status { get; set; }
-
-        //Relations
-        /*
-        public ICollection<User> User { get; set; }
-        */
+    
     }
 }

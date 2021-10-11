@@ -17,11 +17,5 @@ namespace Entities.Concrete
 
         public int UserID { get; set; }
 
-        //Relations
-        /*
-        public virtual User User { get; set; }
-
-        public ICollection<Book> Book { get; set; }
-        */
     }
 }

@@ -15,9 +15,5 @@ namespace Entities.Concrete
 
         public bool Status { get; set; }
 
-        //Relations
-        /*
-        public ICollection<Book> Book { get; set; }
-        */
     }
 }

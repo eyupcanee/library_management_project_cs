@@ -27,14 +27,5 @@ namespace Entities.Concrete
 
         public int AuthorityID { get; set; }
 
-        //Relations
-        /*
-
-        public virtual Authority Authority { get; set; }
-
-        public ICollection<Writer> Writer { get; set; }
-
-        public ICollection<BorrowedBook> BorrowedBook { get; set; }
-        */
     }
 }

@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UserInterface.ChildForms.AdminChildForms;
 using UserInterface.LoginForms;
 
 namespace UserInterface.Interfaces
@@ -128,11 +129,13 @@ namespace UserInterface.Interfaces
         private void btnBookManagement_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new BookManagament());
         }
 
         private void btnUserManagement_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new UserManagament());
         }
 
         private void btnConfirmWriter_Click(object sender, EventArgs e)
@@ -143,6 +146,24 @@ namespace UserInterface.Interfaces
         private void btnSettings_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+        }
+
+        private void btnWriterManager_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new WriterManager());
+        }
+
+        private void btnPublisherManager_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new PublisherManager());
+        }
+
+        private void btnConfirmWriter_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new ConfirmWriter());
         }
 
         private void btnBackLogin_Click(object sender, EventArgs e)
@@ -156,6 +177,8 @@ namespace UserInterface.Interfaces
         {
             Application.Exit();
         }
+
+        
     }
 }
 

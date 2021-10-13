@@ -29,10 +29,11 @@ namespace UserInterface.Interfaces
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.lblChildForm = new System.Windows.Forms.Label();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.CurrentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnSettings = new FontAwesome.Sharp.IconButton();
+            this.btnBackLogin = new FontAwesome.Sharp.IconButton();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -43,61 +44,103 @@ namespace UserInterface.Interfaces
             this.label3 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnBackLogin = new FontAwesome.Sharp.IconButton();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.btnSettings = new FontAwesome.Sharp.IconButton();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblChildForm = new System.Windows.Forms.Label();
+            this.CurrentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
+            this.panelDesktop.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentChildFormIcon)).BeginInit();
-            this.panelLogo.SuspendLayout();
-            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelShadow
+            // panelDesktop
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(220, 60);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(913, 8);
-            this.panelShadow.TabIndex = 6;
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Controls.Add(this.panelTitleBar);
+            this.panelDesktop.Controls.Add(this.panelMenu);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1133, 681);
+            this.panelDesktop.TabIndex = 4;
             // 
-            // lblChildForm
+            // panelMenu
             // 
-            this.lblChildForm.AutoSize = true;
-            this.lblChildForm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblChildForm.Location = new System.Drawing.Point(66, 12);
-            this.lblChildForm.Name = "lblChildForm";
-            this.lblChildForm.Size = new System.Drawing.Size(62, 25);
-            this.lblChildForm.TabIndex = 1;
-            this.lblChildForm.Text = "Home";
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.btnSettings);
+            this.panelMenu.Controls.Add(this.btnBackLogin);
+            this.panelMenu.Controls.Add(this.btnExit);
+            this.panelMenu.Controls.Add(this.btnHome);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(220, 681);
+            this.panelMenu.TabIndex = 1;
             // 
-            // panelTitleBar
+            // btnSettings
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panelTitleBar.Controls.Add(this.lblChildForm);
-            this.panelTitleBar.Controls.Add(this.CurrentChildFormIcon);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(913, 60);
-            this.panelTitleBar.TabIndex = 5;
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.GalacticRepublic;
+            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSettings.IconSize = 40;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 184);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSettings.Size = new System.Drawing.Size(220, 50);
+            this.btnSettings.TabIndex = 8;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = true;
             // 
-            // CurrentChildFormIcon
+            // btnBackLogin
             // 
-            this.CurrentChildFormIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.CurrentChildFormIcon.ForeColor = System.Drawing.Color.MediumPurple;
-            this.CurrentChildFormIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.CurrentChildFormIcon.IconColor = System.Drawing.Color.MediumPurple;
-            this.CurrentChildFormIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.CurrentChildFormIcon.IconSize = 47;
-            this.CurrentChildFormIcon.Location = new System.Drawing.Point(8, 8);
-            this.CurrentChildFormIcon.Name = "CurrentChildFormIcon";
-            this.CurrentChildFormIcon.Size = new System.Drawing.Size(52, 47);
-            this.CurrentChildFormIcon.TabIndex = 0;
-            this.CurrentChildFormIcon.TabStop = false;
+            this.btnBackLogin.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnBackLogin.FlatAppearance.BorderSize = 0;
+            this.btnBackLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBackLogin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBackLogin.IconChar = FontAwesome.Sharp.IconChar.Backspace;
+            this.btnBackLogin.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnBackLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBackLogin.IconSize = 40;
+            this.btnBackLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackLogin.Location = new System.Drawing.Point(0, 594);
+            this.btnBackLogin.Name = "btnBackLogin";
+            this.btnBackLogin.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnBackLogin.Size = new System.Drawing.Size(220, 43);
+            this.btnBackLogin.TabIndex = 6;
+            this.btnBackLogin.Text = "Back To Login Screen";
+            this.btnBackLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBackLogin.UseVisualStyleBackColor = true;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExit.IconSize = 40;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 637);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(220, 44);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // btnHome
             // 
@@ -225,119 +268,71 @@ namespace UserInterface.Interfaces
             this.label1.TabIndex = 0;
             this.label1.Text = "You Logged As : ";
             // 
-            // btnBackLogin
+            // panelTitleBar
             // 
-            this.btnBackLogin.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnBackLogin.FlatAppearance.BorderSize = 0;
-            this.btnBackLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackLogin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBackLogin.IconChar = FontAwesome.Sharp.IconChar.Backspace;
-            this.btnBackLogin.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnBackLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBackLogin.IconSize = 40;
-            this.btnBackLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBackLogin.Location = new System.Drawing.Point(0, 594);
-            this.btnBackLogin.Name = "btnBackLogin";
-            this.btnBackLogin.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnBackLogin.Size = new System.Drawing.Size(220, 43);
-            this.btnBackLogin.TabIndex = 6;
-            this.btnBackLogin.Text = "Back To Login Screen";
-            this.btnBackLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBackLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBackLogin.UseVisualStyleBackColor = true;
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.lblChildForm);
+            this.panelTitleBar.Controls.Add(this.CurrentChildFormIcon);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(913, 60);
+            this.panelTitleBar.TabIndex = 2;
             // 
-            // btnExit
+            // lblChildForm
             // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.IconSize = 40;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 637);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(220, 44);
-            this.btnExit.TabIndex = 5;
-            this.btnExit.Text = "Exit";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.lblChildForm.AutoSize = true;
+            this.lblChildForm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblChildForm.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblChildForm.Location = new System.Drawing.Point(66, 12);
+            this.lblChildForm.Name = "lblChildForm";
+            this.lblChildForm.Size = new System.Drawing.Size(62, 25);
+            this.lblChildForm.TabIndex = 1;
+            this.lblChildForm.Text = "Home";
             // 
-            // btnSettings
+            // CurrentChildFormIcon
             // 
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.GalacticRepublic;
-            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSettings.IconSize = 40;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 184);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSettings.Size = new System.Drawing.Size(220, 50);
-            this.btnSettings.TabIndex = 8;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelMenu.Controls.Add(this.btnSettings);
-            this.panelMenu.Controls.Add(this.btnBackLogin);
-            this.panelMenu.Controls.Add(this.btnExit);
-            this.panelMenu.Controls.Add(this.btnHome);
-            this.panelMenu.Controls.Add(this.panelLogo);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 681);
-            this.panelMenu.TabIndex = 4;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 0);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1133, 681);
-            this.panelDesktop.TabIndex = 7;
+            this.CurrentChildFormIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.CurrentChildFormIcon.ForeColor = System.Drawing.Color.MediumPurple;
+            this.CurrentChildFormIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.CurrentChildFormIcon.IconColor = System.Drawing.Color.MediumPurple;
+            this.CurrentChildFormIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.CurrentChildFormIcon.IconSize = 47;
+            this.CurrentChildFormIcon.Location = new System.Drawing.Point(8, 8);
+            this.CurrentChildFormIcon.Name = "CurrentChildFormIcon";
+            this.CurrentChildFormIcon.Size = new System.Drawing.Size(52, 47);
+            this.CurrentChildFormIcon.TabIndex = 0;
+            this.CurrentChildFormIcon.TabStop = false;
             // 
             // AUserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1133, 681);
-            this.Controls.Add(this.panelShadow);
-            this.Controls.Add(this.panelTitleBar);
-            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelDesktop);
             this.Name = "AUserInterface";
             this.Text = "UserInterface";
+            this.panelDesktop.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrentChildFormIcon)).EndInit();
-            this.panelLogo.ResumeLayout(false);
-            this.panelLogo.PerformLayout();
-            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelShadow;
-        private System.Windows.Forms.Label lblChildForm;
+        public System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Label lblChildForm;
         private FontAwesome.Sharp.IconPictureBox CurrentChildFormIcon;
+        private System.Windows.Forms.Panel panelMenu;
+        private FontAwesome.Sharp.IconButton btnSettings;
+        private FontAwesome.Sharp.IconButton btnBackLogin;
+        private FontAwesome.Sharp.IconButton btnExit;
         private FontAwesome.Sharp.IconButton btnHome;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label lblEmail;
@@ -348,10 +343,5 @@ namespace UserInterface.Interfaces
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton btnBackLogin;
-        private FontAwesome.Sharp.IconButton btnExit;
-        private FontAwesome.Sharp.IconButton btnSettings;
-        private System.Windows.Forms.Panel panelMenu;
-        public System.Windows.Forms.Panel panelDesktop;
     }
 }

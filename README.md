@@ -4,6 +4,8 @@
 
 Library Managament(ERP) Project
 
+## The database used is not yet uploaded
+
 ## Used NuGet Packages:
 >EntityFramework 6  
 >Microsoft.EntityFrameworkCore  

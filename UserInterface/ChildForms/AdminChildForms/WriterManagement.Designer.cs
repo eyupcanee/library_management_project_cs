@@ -1,7 +1,7 @@
 ﻿
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    partial class WriterManager
+    partial class WriterManagement
     {
         /// <summary>
         /// Required designer variable.

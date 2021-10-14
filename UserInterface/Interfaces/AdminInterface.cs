@@ -151,7 +151,7 @@ namespace UserInterface.Interfaces
         private void btnWriterManager_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new WriterManager());
+            OpenChildForm(new WriterManagement());
         }
 
         private void btnPublisherManager_Click(object sender, EventArgs e)
@@ -160,11 +160,18 @@ namespace UserInterface.Interfaces
             OpenChildForm(new PublisherManager());
         }
 
-        private void btnConfirmWriter_Click_1(object sender, EventArgs e)
+        private void btnBorrowedBookManager_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new BorrowedBookManager());
+        }
+
+        private void btnConfirmWriter_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new ConfirmWriter());
         }
+
 
         private void btnBackLogin_Click(object sender, EventArgs e)
         {

@@ -1,7 +1,7 @@
 ﻿
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    partial class UserManagament
+    partial class BorrowedBookManager
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,13 @@ namespace UserInterface.ChildForms.AdminChildForms
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnListBBook = new FontAwesome.Sharp.IconButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.btnListUser = new FontAwesome.Sharp.IconButton();
-            this.btnDeleteUser = new FontAwesome.Sharp.IconButton();
+            this.btnDeliverBBook = new FontAwesome.Sharp.IconButton();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.btnAddUser = new FontAwesome.Sharp.IconButton();
-            this.btnUpdateBook = new FontAwesome.Sharp.IconButton();
+            this.btnUpdateBBook = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -49,6 +49,27 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnListBBook
+            // 
+            this.btnListBBook.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnListBBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnListBBook.FlatAppearance.BorderSize = 0;
+            this.btnListBBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListBBook.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnListBBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(118)))), ((int)(((byte)(176)))));
+            this.btnListBBook.IconChar = FontAwesome.Sharp.IconChar.List;
+            this.btnListBBook.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(118)))), ((int)(((byte)(176)))));
+            this.btnListBBook.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnListBBook.IconSize = 64;
+            this.btnListBBook.Location = new System.Drawing.Point(0, 0);
+            this.btnListBBook.Name = "btnListBBook";
+            this.btnListBBook.Size = new System.Drawing.Size(458, 300);
+            this.btnListBBook.TabIndex = 1;
+            this.btnListBBook.Text = "List Borrowed Book";
+            this.btnListBBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnListBBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnListBBook.UseVisualStyleBackColor = false;
             // 
             // splitContainer1
             // 
@@ -66,7 +87,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer3);
             this.splitContainer1.Size = new System.Drawing.Size(919, 612);
             this.splitContainer1.SplitterDistance = 458;
-            this.splitContainer1.TabIndex = 0;
+            this.splitContainer1.TabIndex = 1;
             // 
             // splitContainer2
             // 
@@ -78,57 +99,35 @@ namespace UserInterface.ChildForms.AdminChildForms
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.btnListUser);
+            this.splitContainer2.Panel1.Controls.Add(this.btnListBBook);
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.btnDeleteUser);
+            this.splitContainer2.Panel2.Controls.Add(this.btnDeliverBBook);
             this.splitContainer2.Size = new System.Drawing.Size(458, 612);
             this.splitContainer2.SplitterDistance = 300;
             this.splitContainer2.TabIndex = 0;
             // 
-            // btnListUser
+            // btnDeliverBBook
             // 
-            this.btnListUser.BackColor = System.Drawing.Color.MediumPurple;
-            this.btnListUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnListUser.FlatAppearance.BorderSize = 0;
-            this.btnListUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListUser.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnListUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(118)))), ((int)(((byte)(176)))));
-            this.btnListUser.IconChar = FontAwesome.Sharp.IconChar.List;
-            this.btnListUser.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(118)))), ((int)(((byte)(176)))));
-            this.btnListUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnListUser.IconSize = 64;
-            this.btnListUser.Location = new System.Drawing.Point(0, 0);
-            this.btnListUser.Name = "btnListUser";
-            this.btnListUser.Size = new System.Drawing.Size(458, 300);
-            this.btnListUser.TabIndex = 1;
-            this.btnListUser.Text = "List Users";
-            this.btnListUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnListUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnListUser.UseVisualStyleBackColor = false;
-            this.btnListUser.Click += new System.EventHandler(this.btnListUser_Click);
-            // 
-            // btnDeleteUser
-            // 
-            this.btnDeleteUser.BackColor = System.Drawing.Color.MediumPurple;
-            this.btnDeleteUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDeleteUser.FlatAppearance.BorderSize = 0;
-            this.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteUser.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDeleteUser.ForeColor = System.Drawing.Color.SpringGreen;
-            this.btnDeleteUser.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnDeleteUser.IconColor = System.Drawing.Color.SpringGreen;
-            this.btnDeleteUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDeleteUser.IconSize = 64;
-            this.btnDeleteUser.Location = new System.Drawing.Point(0, 0);
-            this.btnDeleteUser.Name = "btnDeleteUser";
-            this.btnDeleteUser.Size = new System.Drawing.Size(458, 308);
-            this.btnDeleteUser.TabIndex = 3;
-            this.btnDeleteUser.Text = "Delete User";
-            this.btnDeleteUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDeleteUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDeleteUser.UseVisualStyleBackColor = false;
+            this.btnDeliverBBook.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnDeliverBBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDeliverBBook.FlatAppearance.BorderSize = 0;
+            this.btnDeliverBBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeliverBBook.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeliverBBook.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btnDeliverBBook.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnDeliverBBook.IconColor = System.Drawing.Color.SpringGreen;
+            this.btnDeliverBBook.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDeliverBBook.IconSize = 64;
+            this.btnDeliverBBook.Location = new System.Drawing.Point(0, 0);
+            this.btnDeliverBBook.Name = "btnDeliverBBook";
+            this.btnDeliverBBook.Size = new System.Drawing.Size(458, 308);
+            this.btnDeliverBBook.TabIndex = 3;
+            this.btnDeliverBBook.Text = "Deliver Borrow";
+            this.btnDeliverBBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeliverBBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDeliverBBook.UseVisualStyleBackColor = false;
             // 
             // splitContainer3
             // 
@@ -144,7 +143,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.Controls.Add(this.btnUpdateBook);
+            this.splitContainer3.Panel2.Controls.Add(this.btnUpdateBBook);
             this.splitContainer3.Size = new System.Drawing.Size(457, 612);
             this.splitContainer3.SplitterDistance = 300;
             this.splitContainer3.TabIndex = 0;
@@ -165,42 +164,41 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(457, 300);
             this.btnAddUser.TabIndex = 2;
-            this.btnAddUser.Text = "Add New User";
+            this.btnAddUser.Text = "AddBBook";
             this.btnAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddUser.UseVisualStyleBackColor = false;
-            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
-            // btnUpdateBook
+            // btnUpdateBBook
             // 
-            this.btnUpdateBook.BackColor = System.Drawing.Color.MediumPurple;
-            this.btnUpdateBook.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnUpdateBook.FlatAppearance.BorderSize = 0;
-            this.btnUpdateBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateBook.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdateBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.btnUpdateBook.IconChar = FontAwesome.Sharp.IconChar.Reply;
-            this.btnUpdateBook.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.btnUpdateBook.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdateBook.IconSize = 42;
-            this.btnUpdateBook.Location = new System.Drawing.Point(0, 0);
-            this.btnUpdateBook.Name = "btnUpdateBook";
-            this.btnUpdateBook.Size = new System.Drawing.Size(457, 308);
-            this.btnUpdateBook.TabIndex = 4;
-            this.btnUpdateBook.Text = "Update User";
-            this.btnUpdateBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdateBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdateBook.UseVisualStyleBackColor = false;
+            this.btnUpdateBBook.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnUpdateBBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnUpdateBBook.FlatAppearance.BorderSize = 0;
+            this.btnUpdateBBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateBBook.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateBBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnUpdateBBook.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            this.btnUpdateBBook.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnUpdateBBook.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUpdateBBook.IconSize = 42;
+            this.btnUpdateBBook.Location = new System.Drawing.Point(0, 0);
+            this.btnUpdateBBook.Name = "btnUpdateBBook";
+            this.btnUpdateBBook.Size = new System.Drawing.Size(457, 308);
+            this.btnUpdateBBook.TabIndex = 4;
+            this.btnUpdateBBook.Text = "Update Borrow";
+            this.btnUpdateBBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdateBBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdateBBook.UseVisualStyleBackColor = false;
             // 
-            // UserManagament
+            // BorrowedBookManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(919, 612);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "UserManagament";
-            this.Text = "UserManagament";
+            this.Name = "BorrowedBookManager";
+            this.Text = "BorrowedBookManager";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -219,12 +217,12 @@ namespace UserInterface.ChildForms.AdminChildForms
 
         #endregion
 
+        private FontAwesome.Sharp.IconButton btnListBBook;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private FontAwesome.Sharp.IconButton btnListUser;
-        private FontAwesome.Sharp.IconButton btnDeleteUser;
+        private FontAwesome.Sharp.IconButton btnDeliverBBook;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private FontAwesome.Sharp.IconButton btnAddUser;
-        private FontAwesome.Sharp.IconButton btnUpdateBook;
+        private FontAwesome.Sharp.IconButton btnUpdateBBook;
     }
 }

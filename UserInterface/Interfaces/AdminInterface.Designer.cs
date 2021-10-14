@@ -35,6 +35,8 @@ namespace UserInterface.Interfaces
             this.lblChildForm = new System.Windows.Forms.Label();
             this.CurrentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnPublisherManager = new FontAwesome.Sharp.IconButton();
+            this.btnWriterManager = new FontAwesome.Sharp.IconButton();
             this.btnBackLogin = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.btnUserManagement = new FontAwesome.Sharp.IconButton();
@@ -49,8 +51,7 @@ namespace UserInterface.Interfaces
             this.label3 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnWriterManager = new FontAwesome.Sharp.IconButton();
-            this.btnPublisherManager = new FontAwesome.Sharp.IconButton();
+            this.btnBorrowedBookManager = new FontAwesome.Sharp.IconButton();
             this.btnConfirmWriter = new FontAwesome.Sharp.IconButton();
             this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.panelTitleBar.SuspendLayout();
@@ -119,6 +120,7 @@ namespace UserInterface.Interfaces
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelMenu.Controls.Add(this.btnSettings);
             this.panelMenu.Controls.Add(this.btnConfirmWriter);
+            this.panelMenu.Controls.Add(this.btnBorrowedBookManager);
             this.panelMenu.Controls.Add(this.btnPublisherManager);
             this.panelMenu.Controls.Add(this.btnWriterManager);
             this.panelMenu.Controls.Add(this.btnBackLogin);
@@ -132,6 +134,50 @@ namespace UserInterface.Interfaces
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 681);
             this.panelMenu.TabIndex = 4;
+            // 
+            // btnPublisherManager
+            // 
+            this.btnPublisherManager.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPublisherManager.FlatAppearance.BorderSize = 0;
+            this.btnPublisherManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPublisherManager.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPublisherManager.IconChar = FontAwesome.Sharp.IconChar.Building;
+            this.btnPublisherManager.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnPublisherManager.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPublisherManager.IconSize = 40;
+            this.btnPublisherManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPublisherManager.Location = new System.Drawing.Point(0, 334);
+            this.btnPublisherManager.Name = "btnPublisherManager";
+            this.btnPublisherManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPublisherManager.Size = new System.Drawing.Size(220, 50);
+            this.btnPublisherManager.TabIndex = 10;
+            this.btnPublisherManager.Text = "Publisher Management";
+            this.btnPublisherManager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPublisherManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPublisherManager.UseVisualStyleBackColor = true;
+            this.btnPublisherManager.Click += new System.EventHandler(this.btnPublisherManager_Click);
+            // 
+            // btnWriterManager
+            // 
+            this.btnWriterManager.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWriterManager.FlatAppearance.BorderSize = 0;
+            this.btnWriterManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWriterManager.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnWriterManager.IconChar = FontAwesome.Sharp.IconChar.PenAlt;
+            this.btnWriterManager.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnWriterManager.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnWriterManager.IconSize = 40;
+            this.btnWriterManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWriterManager.Location = new System.Drawing.Point(0, 284);
+            this.btnWriterManager.Name = "btnWriterManager";
+            this.btnWriterManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnWriterManager.Size = new System.Drawing.Size(220, 50);
+            this.btnWriterManager.TabIndex = 4;
+            this.btnWriterManager.Text = "Writer Management";
+            this.btnWriterManager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWriterManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnWriterManager.UseVisualStyleBackColor = true;
+            this.btnWriterManager.Click += new System.EventHandler(this.btnWriterManager_Click);
             // 
             // btnBackLogin
             // 
@@ -348,49 +394,27 @@ namespace UserInterface.Interfaces
             this.label1.TabIndex = 0;
             this.label1.Text = "You Logged As : ";
             // 
-            // btnWriterManager
+            // btnBorrowedBookManager
             // 
-            this.btnWriterManager.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnWriterManager.FlatAppearance.BorderSize = 0;
-            this.btnWriterManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWriterManager.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnWriterManager.IconChar = FontAwesome.Sharp.IconChar.PenAlt;
-            this.btnWriterManager.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnWriterManager.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnWriterManager.IconSize = 40;
-            this.btnWriterManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWriterManager.Location = new System.Drawing.Point(0, 284);
-            this.btnWriterManager.Name = "btnWriterManager";
-            this.btnWriterManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnWriterManager.Size = new System.Drawing.Size(220, 50);
-            this.btnWriterManager.TabIndex = 4;
-            this.btnWriterManager.Text = "Writer Management";
-            this.btnWriterManager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWriterManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnWriterManager.UseVisualStyleBackColor = true;
-            this.btnWriterManager.Click += new System.EventHandler(this.btnWriterManager_Click);
-            // 
-            // btnPublisherManager
-            // 
-            this.btnPublisherManager.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPublisherManager.FlatAppearance.BorderSize = 0;
-            this.btnPublisherManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPublisherManager.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPublisherManager.IconChar = FontAwesome.Sharp.IconChar.Building;
-            this.btnPublisherManager.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnPublisherManager.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPublisherManager.IconSize = 40;
-            this.btnPublisherManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPublisherManager.Location = new System.Drawing.Point(0, 334);
-            this.btnPublisherManager.Name = "btnPublisherManager";
-            this.btnPublisherManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnPublisherManager.Size = new System.Drawing.Size(220, 50);
-            this.btnPublisherManager.TabIndex = 10;
-            this.btnPublisherManager.Text = "Publisher Management";
-            this.btnPublisherManager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPublisherManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPublisherManager.UseVisualStyleBackColor = true;
-            this.btnPublisherManager.Click += new System.EventHandler(this.btnPublisherManager_Click);
+            this.btnBorrowedBookManager.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBorrowedBookManager.FlatAppearance.BorderSize = 0;
+            this.btnBorrowedBookManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrowedBookManager.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBorrowedBookManager.IconChar = FontAwesome.Sharp.IconChar.Clock;
+            this.btnBorrowedBookManager.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnBorrowedBookManager.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBorrowedBookManager.IconSize = 40;
+            this.btnBorrowedBookManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBorrowedBookManager.Location = new System.Drawing.Point(0, 384);
+            this.btnBorrowedBookManager.Name = "btnBorrowedBookManager";
+            this.btnBorrowedBookManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnBorrowedBookManager.Size = new System.Drawing.Size(220, 50);
+            this.btnBorrowedBookManager.TabIndex = 15;
+            this.btnBorrowedBookManager.Text = "Borrowed Book Management";
+            this.btnBorrowedBookManager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBorrowedBookManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBorrowedBookManager.UseVisualStyleBackColor = true;
+            this.btnBorrowedBookManager.Click += new System.EventHandler(this.btnBorrowedBookManager_Click);
             // 
             // btnConfirmWriter
             // 
@@ -403,16 +427,15 @@ namespace UserInterface.Interfaces
             this.btnConfirmWriter.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnConfirmWriter.IconSize = 40;
             this.btnConfirmWriter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfirmWriter.Location = new System.Drawing.Point(0, 384);
+            this.btnConfirmWriter.Location = new System.Drawing.Point(0, 434);
             this.btnConfirmWriter.Name = "btnConfirmWriter";
             this.btnConfirmWriter.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnConfirmWriter.Size = new System.Drawing.Size(220, 50);
-            this.btnConfirmWriter.TabIndex = 13;
+            this.btnConfirmWriter.TabIndex = 17;
             this.btnConfirmWriter.Text = "Confirm Writer";
             this.btnConfirmWriter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfirmWriter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfirmWriter.UseVisualStyleBackColor = true;
-            this.btnConfirmWriter.Click += new System.EventHandler(this.btnConfirmWriter_Click_1);
             // 
             // btnSettings
             // 
@@ -425,11 +448,11 @@ namespace UserInterface.Interfaces
             this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSettings.IconSize = 40;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 434);
+            this.btnSettings.Location = new System.Drawing.Point(0, 484);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSettings.Size = new System.Drawing.Size(220, 50);
-            this.btnSettings.TabIndex = 14;
+            this.btnSettings.TabIndex = 18;
             this.btnSettings.Text = "Settings";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -479,9 +502,10 @@ namespace UserInterface.Interfaces
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconButton btnSettings;
-        private FontAwesome.Sharp.IconButton btnConfirmWriter;
         private FontAwesome.Sharp.IconButton btnPublisherManager;
         private FontAwesome.Sharp.IconButton btnWriterManager;
+        private FontAwesome.Sharp.IconButton btnSettings;
+        private FontAwesome.Sharp.IconButton btnConfirmWriter;
+        private FontAwesome.Sharp.IconButton btnBorrowedBookManager;
     }
 }

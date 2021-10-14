@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Concrete.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,11 @@ using System.Windows.Forms;
 
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    public partial class WriterManager : Form
+    public partial class WriterManagement : Form
     {
-        public WriterManager()
+        private WriterDal writerDal;
+
+        public WriterManagement()
         {
             InitializeComponent();
             this.ControlBox = false;

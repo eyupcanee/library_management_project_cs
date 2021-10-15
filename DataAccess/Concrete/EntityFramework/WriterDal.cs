@@ -58,7 +58,8 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (LibraryDbContextDal context = new LibraryDbContextDal())
             {
-                context.Tbl_Writers.Remove(context.Tbl_Writers.SingleOrDefault(x => x.ID == entity.ID));
+                context.Tbl_Writers.Remove(entity);
+                context.SaveChanges();
             }
         }
 

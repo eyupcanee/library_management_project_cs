@@ -66,7 +66,8 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (LibraryDbContextDal context = new LibraryDbContextDal())
             {
-                context.Tbl_Users.Remove(context.Tbl_Users.SingleOrDefault(x => x.ID == entity.ID));
+                context.Tbl_Users.Remove(entity);
+                context.SaveChanges();
             }
         }
 
@@ -82,6 +83,7 @@ namespace DataAccess.Concrete.EntityFramework
                 toUpdate.Email = entity.Email;
                 toUpdate.Gsm = entity.Gsm;
                 toUpdate.AuthorityID = entity.AuthorityID;
+                toUpdate.Status = entity.Status;
                 context.SaveChanges();
             }
         }

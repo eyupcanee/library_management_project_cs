@@ -26,6 +26,7 @@ namespace UserInterface.ChildForms.AdminChildForms
         private void OpenForm(Form form)
         {
             var mainForm = Application.OpenForms.OfType<AdminInterface>().Single();
+            Close();
             mainForm.OpenChildForm(form);
         }
 
@@ -37,6 +38,16 @@ namespace UserInterface.ChildForms.AdminChildForms
         private void btnAddUser_Click(object sender, EventArgs e)
         {
             OpenForm(new AddUser());
+        }
+
+        private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+            OpenForm(new DeleteUser());
+        }
+
+        private void btnUpdateBook_Click(object sender, EventArgs e)
+        {
+            OpenForm(new UpdateUser());
         }
     }
 }

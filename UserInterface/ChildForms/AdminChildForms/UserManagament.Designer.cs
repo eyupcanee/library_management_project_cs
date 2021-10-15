@@ -129,6 +129,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnDeleteUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeleteUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDeleteUser.UseVisualStyleBackColor = false;
+            this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
             // 
             // splitContainer3
             // 
@@ -191,6 +192,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnUpdateBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUpdateBook.UseVisualStyleBackColor = false;
+            this.btnUpdateBook.Click += new System.EventHandler(this.btnUpdateBook_Click);
             // 
             // UserManagament
             // 

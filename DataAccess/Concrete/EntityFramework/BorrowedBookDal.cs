@@ -58,7 +58,8 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (LibraryDbContextDal context = new LibraryDbContextDal())
             {
-                context.Tbl_BorrowedBooks.Remove(context.Tbl_BorrowedBooks.SingleOrDefault(x => x.ID == entity.ID));
+                context.Tbl_BorrowedBooks.Remove(entity);
+                context.SaveChanges();
             }
         }
 

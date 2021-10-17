@@ -1,7 +1,7 @@
 ﻿
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    partial class UserManagament
+    partial class UserManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,13 @@ namespace UserInterface.ChildForms.AdminChildForms
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnUpdateBook = new FontAwesome.Sharp.IconButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.btnListUser = new FontAwesome.Sharp.IconButton();
             this.btnDeleteUser = new FontAwesome.Sharp.IconButton();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.btnAddUser = new FontAwesome.Sharp.IconButton();
-            this.btnUpdateBook = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -49,6 +49,28 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnUpdateBook
+            // 
+            this.btnUpdateBook.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnUpdateBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnUpdateBook.FlatAppearance.BorderSize = 0;
+            this.btnUpdateBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateBook.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnUpdateBook.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            this.btnUpdateBook.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnUpdateBook.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUpdateBook.IconSize = 42;
+            this.btnUpdateBook.Location = new System.Drawing.Point(0, 0);
+            this.btnUpdateBook.Name = "btnUpdateBook";
+            this.btnUpdateBook.Size = new System.Drawing.Size(457, 308);
+            this.btnUpdateBook.TabIndex = 4;
+            this.btnUpdateBook.Text = "Update User";
+            this.btnUpdateBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdateBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdateBook.UseVisualStyleBackColor = false;
+            this.btnUpdateBook.Click += new System.EventHandler(this.btnUpdateBook_Click);
             // 
             // splitContainer1
             // 
@@ -66,7 +88,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer3);
             this.splitContainer1.Size = new System.Drawing.Size(919, 612);
             this.splitContainer1.SplitterDistance = 458;
-            this.splitContainer1.TabIndex = 0;
+            this.splitContainer1.TabIndex = 1;
             // 
             // splitContainer2
             // 
@@ -172,37 +194,15 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnAddUser.UseVisualStyleBackColor = false;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
-            // btnUpdateBook
-            // 
-            this.btnUpdateBook.BackColor = System.Drawing.Color.MediumPurple;
-            this.btnUpdateBook.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnUpdateBook.FlatAppearance.BorderSize = 0;
-            this.btnUpdateBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateBook.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdateBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.btnUpdateBook.IconChar = FontAwesome.Sharp.IconChar.Reply;
-            this.btnUpdateBook.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.btnUpdateBook.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdateBook.IconSize = 42;
-            this.btnUpdateBook.Location = new System.Drawing.Point(0, 0);
-            this.btnUpdateBook.Name = "btnUpdateBook";
-            this.btnUpdateBook.Size = new System.Drawing.Size(457, 308);
-            this.btnUpdateBook.TabIndex = 4;
-            this.btnUpdateBook.Text = "Update User";
-            this.btnUpdateBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdateBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdateBook.UseVisualStyleBackColor = false;
-            this.btnUpdateBook.Click += new System.EventHandler(this.btnUpdateBook_Click);
-            // 
-            // UserManagament
+            // UserManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(919, 612);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "UserManagament";
-            this.Text = "UserManagament";
+            this.Name = "UserManagement";
+            this.Text = "UserManagement";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -221,12 +221,12 @@ namespace UserInterface.ChildForms.AdminChildForms
 
         #endregion
 
+        private FontAwesome.Sharp.IconButton btnUpdateBook;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private FontAwesome.Sharp.IconButton btnListUser;
         private FontAwesome.Sharp.IconButton btnDeleteUser;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private FontAwesome.Sharp.IconButton btnAddUser;
-        private FontAwesome.Sharp.IconButton btnUpdateBook;
     }
 }

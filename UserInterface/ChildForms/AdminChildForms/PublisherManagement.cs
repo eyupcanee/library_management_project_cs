@@ -1,5 +1,4 @@
-﻿using DataAccess.Concrete.EntityFramework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,22 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UserInterface.ChildForms.AdminChildForms.WriterManagementChildForms;
+using UserInterface.ChildForms.AdminChildForms.PublisherManagementChildForms;
 using UserInterface.Interfaces;
 
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    public partial class WriterManagement : Form
+    public partial class PublisherManagement : Form
     {
-        private WriterDal writerDal;
-
-        public WriterManagement()
+        public PublisherManagement()
         {
             InitializeComponent();
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.Text = "Writer Management";
+            this.Text = "Publisher Management";
         }
 
         private void OpenForm(Form form)
@@ -33,24 +30,24 @@ namespace UserInterface.ChildForms.AdminChildForms
             mainForm.OpenChildForm(form);
         }
 
-        private void btnListWriter_Click(object sender, EventArgs e)
+        private void btnListPublisher_Click(object sender, EventArgs e)
         {
-            OpenForm(new ListWriter());
+            OpenForm(new ListPublisher());
         }
 
-        private void btnAddWriter_Click(object sender, EventArgs e)
+        private void btnAddPublisher_Click(object sender, EventArgs e)
         {
-            OpenForm(new AddWriter());
+            OpenForm(new AddPublisher());
         }
 
-        private void btnDeleteWriter_Click(object sender, EventArgs e)
+        private void btnDeletePublisher_Click(object sender, EventArgs e)
         {
-            OpenForm(new DeleteWriter());
+            OpenForm(new DeletePublisher());
         }
 
-        private void btnUpdateWriter_Click(object sender, EventArgs e)
+        private void btnUpdatePublisher_Click(object sender, EventArgs e)
         {
-            OpenForm(new UpdateWriter());
+            OpenForm(new UpdatePublisher());
         }
     }
 }

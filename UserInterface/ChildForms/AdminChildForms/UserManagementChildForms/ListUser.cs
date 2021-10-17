@@ -179,7 +179,7 @@ namespace UserInterface.ChildForms.AdminChildForms.UserManagamentChildForms
         private void btnBack_Click(object sender, EventArgs e)
         {
             var mainForm = Application.OpenForms.OfType<AdminInterface>().Single();
-            mainForm.OpenChildForm(new UserManagament());
+            mainForm.OpenChildForm(new UserManagement());
         }
     }
 }

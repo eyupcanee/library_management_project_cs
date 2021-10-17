@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UserInterface.Interfaces;
+using UserInterface.ChildForms.AdminChildForms;
 
 namespace UserInterface.ChildForms.AdminChildForms.UserManagamentChildForms
 {
@@ -167,7 +168,7 @@ namespace UserInterface.ChildForms.AdminChildForms.UserManagamentChildForms
         private void btnBack_Click(object sender, EventArgs e)
         {
             var mainForm = Application.OpenForms.OfType<AdminInterface>().Single();
-            mainForm.OpenChildForm(new UserManagament());
+            mainForm.OpenChildForm(new UserManagement());
         }
     }
 }

@@ -107,6 +107,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnListWriter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnListWriter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListWriter.UseVisualStyleBackColor = false;
+            this.btnListWriter.Click += new System.EventHandler(this.btnListWriter_Click);
             // 
             // btnDeleteWriter
             // 
@@ -128,6 +129,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnDeleteWriter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeleteWriter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDeleteWriter.UseVisualStyleBackColor = false;
+            this.btnDeleteWriter.Click += new System.EventHandler(this.btnDeleteWriter_Click);
             // 
             // splitContainer3
             // 
@@ -168,6 +170,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnAddWriter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddWriter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddWriter.UseVisualStyleBackColor = false;
+            this.btnAddWriter.Click += new System.EventHandler(this.btnAddWriter_Click);
             // 
             // btnUpdateWriter
             // 
@@ -189,15 +192,16 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnUpdateWriter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateWriter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUpdateWriter.UseVisualStyleBackColor = false;
+            this.btnUpdateWriter.Click += new System.EventHandler(this.btnUpdateWriter_Click);
             // 
-            // WriterManager
+            // WriterManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(919, 612);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "WriterManager";
+            this.Name = "WriterManagement";
             this.Text = "WriterManager";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

@@ -1,5 +1,4 @@
-﻿using DataAccess.Concrete.EntityFramework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,22 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UserInterface.ChildForms.AdminChildForms.WriterManagementChildForms;
+using UserInterface.ChildForms.AdminChildForms.BorrowedBookManagementChildForms;
 using UserInterface.Interfaces;
 
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    public partial class WriterManagement : Form
+    public partial class BorrowedBookManagement : Form
     {
-        private WriterDal writerDal;
-
-        public WriterManagement()
+        public BorrowedBookManagement()
         {
             InitializeComponent();
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.Text = "Writer Management";
+            this.Text = "Borrowed Book Management";
         }
 
         private void OpenForm(Form form)
@@ -33,24 +30,24 @@ namespace UserInterface.ChildForms.AdminChildForms
             mainForm.OpenChildForm(form);
         }
 
-        private void btnListWriter_Click(object sender, EventArgs e)
+        private void btnListBBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new ListWriter());
+            OpenForm(new ListBorrowedBook());
         }
 
-        private void btnAddWriter_Click(object sender, EventArgs e)
+        private void btnAddBBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new AddWriter());
+            OpenForm(new AddBorrowedBook());
         }
 
-        private void btnDeleteWriter_Click(object sender, EventArgs e)
+        private void btnDeliverBBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new DeleteWriter());
+            OpenForm(new DeleteBorrowedBook());
         }
 
-        private void btnUpdateWriter_Click(object sender, EventArgs e)
+        private void btnUpdateBBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new UpdateWriter());
+            OpenForm(new UpdateBorrowedBook());
         }
     }
 }

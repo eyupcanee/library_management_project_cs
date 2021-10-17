@@ -1,5 +1,4 @@
-﻿using DataAccess.Concrete.EntityFramework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,22 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UserInterface.ChildForms.AdminChildForms.WriterManagementChildForms;
+using UserInterface.ChildForms.AdminChildForms.UserManagamentChildForms;
 using UserInterface.Interfaces;
 
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    public partial class WriterManagement : Form
+    public partial class UserManagement : Form
     {
-        private WriterDal writerDal;
-
-        public WriterManagement()
+        public UserManagement()
         {
+            InitializeComponent();
             InitializeComponent();
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.Text = "Writer Management";
+            this.Text = "User Management";
         }
 
         private void OpenForm(Form form)
@@ -33,24 +31,24 @@ namespace UserInterface.ChildForms.AdminChildForms
             mainForm.OpenChildForm(form);
         }
 
-        private void btnListWriter_Click(object sender, EventArgs e)
+        private void btnListUser_Click(object sender, EventArgs e)
         {
-            OpenForm(new ListWriter());
+            OpenForm(new ListUser());
         }
 
-        private void btnAddWriter_Click(object sender, EventArgs e)
+        private void btnAddUser_Click(object sender, EventArgs e)
         {
-            OpenForm(new AddWriter());
+            OpenForm(new AddUser());
         }
 
-        private void btnDeleteWriter_Click(object sender, EventArgs e)
+        private void btnDeleteUser_Click(object sender, EventArgs e)
         {
-            OpenForm(new DeleteWriter());
+            OpenForm(new DeleteUser());
         }
 
-        private void btnUpdateWriter_Click(object sender, EventArgs e)
+        private void btnUpdateBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new UpdateWriter());
+            OpenForm(new UpdateUser());
         }
     }
 }

@@ -92,7 +92,7 @@ namespace UserInterface.ChildForms.AdminChildForms.UserManagamentChildForms
         {
             var mainForm = Application.OpenForms.OfType<AdminInterface>().Single();
             Close();
-            mainForm.OpenChildForm(new UserManagament());
+            mainForm.OpenChildForm(new UserManagement());
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

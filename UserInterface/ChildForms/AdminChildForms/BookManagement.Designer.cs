@@ -1,7 +1,7 @@
 ﻿
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    partial class BookManagament
+    partial class BookManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -66,10 +66,11 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnDeleteBook.Name = "btnDeleteBook";
             this.btnDeleteBook.Size = new System.Drawing.Size(458, 308);
             this.btnDeleteBook.TabIndex = 3;
-            this.btnDeleteBook.Text = "Delete User";
+            this.btnDeleteBook.Text = "Delete Book";
             this.btnDeleteBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeleteBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDeleteBook.UseVisualStyleBackColor = false;
+            this.btnDeleteBook.Click += new System.EventHandler(this.btnDeleteBook_Click);
             // 
             // splitContainer1
             // 
@@ -128,6 +129,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnListBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnListBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListBook.UseVisualStyleBackColor = false;
+            this.btnListBook.Click += new System.EventHandler(this.btnListBook_Click);
             // 
             // splitContainer3
             // 
@@ -168,6 +170,7 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnAddBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddBook.UseVisualStyleBackColor = false;
+            this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
             // btnUpdateBook
             // 
@@ -185,19 +188,20 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnUpdateBook.Name = "btnUpdateBook";
             this.btnUpdateBook.Size = new System.Drawing.Size(457, 308);
             this.btnUpdateBook.TabIndex = 4;
-            this.btnUpdateBook.Text = "Update User";
+            this.btnUpdateBook.Text = "Update Book";
             this.btnUpdateBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUpdateBook.UseVisualStyleBackColor = false;
+            this.btnUpdateBook.Click += new System.EventHandler(this.btnUpdateBook_Click);
             // 
-            // BookManagament
+            // BookManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(919, 612);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "BookManagament";
+            this.Name = "BookManagement";
             this.Text = "BookManagament";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

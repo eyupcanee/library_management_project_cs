@@ -129,13 +129,13 @@ namespace UserInterface.Interfaces
         private void btnBookManagement_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new BookManagament());
+            OpenChildForm(new BookManagement());
         }
 
         private void btnUserManagement_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new UserManagament());
+            OpenChildForm(new UserManagement());
         }
 
         private void btnConfirmWriter_Click(object sender, EventArgs e)
@@ -157,13 +157,13 @@ namespace UserInterface.Interfaces
         private void btnPublisherManager_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new PublisherManager());
+            OpenChildForm(new PublisherManagement());
         }
 
         private void btnBorrowedBookManager_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new BorrowedBookManager());
+            OpenChildForm(new BorrowedBookManagement());
         }
 
         private void btnConfirmWriter_Click_1(object sender, EventArgs e)

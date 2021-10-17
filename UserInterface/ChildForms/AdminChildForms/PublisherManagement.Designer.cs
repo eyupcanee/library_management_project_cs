@@ -1,7 +1,7 @@
 ﻿
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    partial class PublisherManager
+    partial class PublisherManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -103,10 +103,11 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnListPublisher.Name = "btnListPublisher";
             this.btnListPublisher.Size = new System.Drawing.Size(458, 300);
             this.btnListPublisher.TabIndex = 1;
-            this.btnListPublisher.Text = "List Users";
+            this.btnListPublisher.Text = "List Publishers";
             this.btnListPublisher.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnListPublisher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListPublisher.UseVisualStyleBackColor = false;
+            this.btnListPublisher.Click += new System.EventHandler(this.btnListPublisher_Click);
             // 
             // btnDeletePublisher
             // 
@@ -124,10 +125,11 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnDeletePublisher.Name = "btnDeletePublisher";
             this.btnDeletePublisher.Size = new System.Drawing.Size(458, 308);
             this.btnDeletePublisher.TabIndex = 3;
-            this.btnDeletePublisher.Text = "Delete User";
+            this.btnDeletePublisher.Text = "Delete Publisher";
             this.btnDeletePublisher.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeletePublisher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDeletePublisher.UseVisualStyleBackColor = false;
+            this.btnDeletePublisher.Click += new System.EventHandler(this.btnDeletePublisher_Click);
             // 
             // splitContainer3
             // 
@@ -164,10 +166,11 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnAddPublisher.Name = "btnAddPublisher";
             this.btnAddPublisher.Size = new System.Drawing.Size(457, 300);
             this.btnAddPublisher.TabIndex = 2;
-            this.btnAddPublisher.Text = "Add New User";
+            this.btnAddPublisher.Text = "Add New Publisher";
             this.btnAddPublisher.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddPublisher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddPublisher.UseVisualStyleBackColor = false;
+            this.btnAddPublisher.Click += new System.EventHandler(this.btnAddPublisher_Click);
             // 
             // btnUpdatePublisher
             // 
@@ -185,19 +188,20 @@ namespace UserInterface.ChildForms.AdminChildForms
             this.btnUpdatePublisher.Name = "btnUpdatePublisher";
             this.btnUpdatePublisher.Size = new System.Drawing.Size(457, 308);
             this.btnUpdatePublisher.TabIndex = 4;
-            this.btnUpdatePublisher.Text = "Update User";
+            this.btnUpdatePublisher.Text = "Update Publisher";
             this.btnUpdatePublisher.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdatePublisher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUpdatePublisher.UseVisualStyleBackColor = false;
+            this.btnUpdatePublisher.Click += new System.EventHandler(this.btnUpdatePublisher_Click);
             // 
-            // PublisherManager
+            // PublisherManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(919, 612);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "PublisherManager";
+            this.Name = "PublisherManagement";
             this.Text = "PublisherManager";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

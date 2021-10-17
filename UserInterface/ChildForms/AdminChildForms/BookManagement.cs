@@ -7,20 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UserInterface.ChildForms.AdminChildForms.UserManagamentChildForms;
+using UserInterface.ChildForms.AdminChildForms.BookManagementChildForms;
 using UserInterface.Interfaces;
 
 namespace UserInterface.ChildForms.AdminChildForms
 {
-    public partial class UserManagament : Form
+    public partial class BookManagement : Form
     {
-        public UserManagament()
+        public BookManagement()
         {
             InitializeComponent();
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.Text = "User Management";
+            this.Text = "Book Management";
         }
 
         private void OpenForm(Form form)
@@ -30,24 +30,24 @@ namespace UserInterface.ChildForms.AdminChildForms
             mainForm.OpenChildForm(form);
         }
 
-        private void btnListUser_Click(object sender, EventArgs e)
+        private void btnListBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new ListUser());
+            OpenForm(new ListBook());
         }
 
-        private void btnAddUser_Click(object sender, EventArgs e)
+        private void btnAddBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new AddUser());
+            OpenForm(new AddBook());
         }
 
-        private void btnDeleteUser_Click(object sender, EventArgs e)
+        private void btnDeleteBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new DeleteUser());
+            OpenForm(new DeleteBook());
         }
 
         private void btnUpdateBook_Click(object sender, EventArgs e)
         {
-            OpenForm(new UpdateUser());
+            OpenForm(new UpdateBook());
         }
     }
 }

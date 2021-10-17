@@ -14,9 +14,7 @@ using UserInterface.Interfaces;
 namespace UserInterface.ChildForms.AdminChildForms
 {
     public partial class WriterManagement : Form
-    {
-        private WriterDal writerDal;
-
+    {     
         public WriterManagement()
         {
             InitializeComponent();

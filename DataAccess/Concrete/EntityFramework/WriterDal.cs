@@ -46,6 +46,14 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public Writer GetByUserId(int uID)
+        {
+            using (LibraryDbContextDal context = new LibraryDbContextDal())
+            {
+                return context.Tbl_Writers.SingleOrDefault(x => x.UserID == uID);
+            }
+        }
+
         public List<Writer> GetByStatus(bool status)
         {
             using (LibraryDbContextDal context = new LibraryDbContextDal())

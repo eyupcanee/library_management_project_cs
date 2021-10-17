@@ -56,6 +56,18 @@ namespace Business.Concrete
             }
         }
 
+        public List<User> GetByAuthority(int autID)
+        {
+            try
+            {
+                return userDal.GetByAuthority(autID);
+            }
+            catch (Exception)
+            {
+                throw new DbConnectionException(ExpStrings.DbConExpStr);
+            }
+        }
+
         public User GetById(int id)
         {
             try

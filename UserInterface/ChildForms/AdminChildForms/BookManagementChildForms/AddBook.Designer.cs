@@ -29,10 +29,18 @@ namespace UserInterface.ChildForms.AdminChildForms.BookManagementChildForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // AddBook
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.ClientSize = new System.Drawing.Size(919, 612);
+            this.Name = "AddBook";
             this.Text = "AddBook";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

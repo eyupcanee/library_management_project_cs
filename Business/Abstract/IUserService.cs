@@ -11,5 +11,7 @@ namespace Business.Abstract
     public interface IUserService : Repository.IRepositoryService<User>
     {
         User GetLastUser();
+
+        List<User> GetByAuthority(int autID);
     }
 }

@@ -15,6 +15,10 @@ namespace UserInterface.ChildForms.AdminChildForms.WriterManagementChildForms
         public DeleteWriter()
         {
             InitializeComponent();
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Text = "Delete Writer";
         }
     }
 }

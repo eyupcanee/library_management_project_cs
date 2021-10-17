@@ -62,6 +62,14 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<User> GetByAuthority(int autID)
+        {
+            using (LibraryDbContextDal context = new LibraryDbContextDal())
+            {
+                return context.Tbl_Users.Where(x => x.AuthorityID == autID).ToList();
+            }
+        }
+
         public void HardDelete(User entity)
         {
             using (LibraryDbContextDal context = new LibraryDbContextDal())

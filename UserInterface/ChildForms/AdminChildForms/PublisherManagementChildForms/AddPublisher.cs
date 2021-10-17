@@ -15,6 +15,10 @@ namespace UserInterface.ChildForms.AdminChildForms.PublisherManagementChildForms
         public AddPublisher()
         {
             InitializeComponent();
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Text = "Add Publisher";
         }
     }
 }

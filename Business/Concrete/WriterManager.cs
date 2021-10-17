@@ -68,6 +68,18 @@ namespace Business.Concrete
             }
         }
 
+        public Writer GetByUserId(int uID)
+        {
+            try
+            {
+                return writerDal.GetByUserId(uID);
+            }
+            catch (Exception)
+            {
+                throw new DbConnectionException(ExpStrings.DbConExpStr);
+            }
+        }
+
         public List<Writer> GetByStatus(bool status)
         {
             try

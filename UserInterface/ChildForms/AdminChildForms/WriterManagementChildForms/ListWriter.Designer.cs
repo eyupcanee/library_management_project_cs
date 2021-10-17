@@ -29,12 +29,49 @@ namespace UserInterface.ChildForms.AdminChildForms.WriterManagementChildForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvWriters = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWriters)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // dgvWriters
+            // 
+            this.dgvWriters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWriters.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvWriters.Location = new System.Drawing.Point(0, 0);
+            this.dgvWriters.Name = "dgvWriters";
+            this.dgvWriters.RowTemplate.Height = 25;
+            this.dgvWriters.Size = new System.Drawing.Size(919, 322);
+            this.dgvWriters.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dgvWriters);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(919, 322);
+            this.panel1.TabIndex = 2;
+            // 
+            // ListWriter
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.ClientSize = new System.Drawing.Size(919, 612);
+            this.Controls.Add(this.panel1);
+            this.Name = "ListWriter";
             this.Text = "ListWriter";
+            this.Load += new System.EventHandler(this.ListWriter_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWriters)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private System.Windows.Forms.DataGridView dgvWriters;
+        private System.Windows.Forms.Panel panel1;
     }
 }

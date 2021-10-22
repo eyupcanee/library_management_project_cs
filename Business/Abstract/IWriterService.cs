@@ -10,5 +10,7 @@ namespace Business.Abstract
     public interface IWriterService : Repository.IRepositoryService<Writer>
     {
         Writer GetByUserId(int uID);
+
+        List<Writer> GetByConfirmation(bool confirmation);
     }
 }

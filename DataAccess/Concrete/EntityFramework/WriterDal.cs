@@ -38,6 +38,14 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<Writer> GetByConfirmation(bool confirmation)
+        {
+            using (LibraryDbContextDal context = new LibraryDbContextDal())
+            {
+                return context.Tbl_Writers.Where(x => x.Confirmation == confirmation).ToList();
+            }
+        }
+
         public Writer GetById(int id)
         {
             using (LibraryDbContextDal context = new LibraryDbContextDal())

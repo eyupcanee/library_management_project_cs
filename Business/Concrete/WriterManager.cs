@@ -80,6 +80,18 @@ namespace Business.Concrete
             }
         }
 
+        public List<Writer> GetByConfirmation(bool confirmation)
+        {
+            try
+            {
+                return writerDal.GetByConfirmation(confirmation);
+            }
+            catch (Exception)
+            {
+                throw new DbConnectionException(ExpStrings.DbConExpStr);
+            }
+        }
+
         public List<Writer> GetByStatus(bool status)
         {
             try

@@ -11,5 +11,7 @@ namespace DataAccess.Abstract
     public interface IWriterDal : IRepositoryDal<Writer>
     {
         Writer GetByUserId(int uID);
+
+        List<Writer> GetByConfirmation(bool confirmation);
     }
 }

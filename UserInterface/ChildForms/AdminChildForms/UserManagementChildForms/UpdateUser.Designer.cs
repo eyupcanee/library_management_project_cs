@@ -204,7 +204,7 @@ namespace UserInterface.ChildForms.AdminChildForms.UserManagamentChildForms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(311, 522);
+            this.label5.Location = new System.Drawing.Point(311, 525);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 30);
             this.label5.TabIndex = 85;

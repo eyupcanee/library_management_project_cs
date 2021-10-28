@@ -10,5 +10,8 @@ namespace DataAccess.Abstract
 {
     public interface IBookDal : IRepositoryDal<Book>
     {
+        List<Book> GetByWriter(Writer writer);
+
+        List<Book> GetByPublisher(Publisher publisher);
     }
 }

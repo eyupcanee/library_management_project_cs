@@ -47,11 +47,27 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<Book> GetByPublisher(Publisher publisher)
+        {
+            using (LibraryDbContextDal context = new LibraryDbContextDal())
+            {
+                return context.Tbl_Books.Where(x => x.PublisherID == publisher.ID).ToList();
+            }
+        }
+
         public List<Book> GetByStatus(bool status)
         {
             using (LibraryDbContextDal context = new LibraryDbContextDal())
             {
                 return context.Tbl_Books.Where(x => x.Status == status).ToList();
+            }
+        }
+
+        public List<Book> GetByWriter(Writer writer)
+        {
+            using (LibraryDbContextDal context = new LibraryDbContextDal())
+            {
+                return context.Tbl_Books.Where(x => x.WriterID == writer.ID).ToList();
             }
         }
 

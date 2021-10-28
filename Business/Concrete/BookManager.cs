@@ -68,11 +68,35 @@ namespace Business.Concrete
             }
         }
 
+        public List<Book> GetByPublisher(Publisher publisher)
+        {
+            try
+            {
+                return bookDal.GetByPublisher(publisher);
+            }
+            catch (Exception)
+            {
+                throw new DbConnectionException(ExpStrings.DbConExpStr);
+            }
+        }
+
         public List<Book> GetByStatus(bool status)
         {
             try
             {
                 return bookDal.GetByStatus(status);
+            }
+            catch (Exception)
+            {
+                throw new DbConnectionException(ExpStrings.DbConExpStr);
+            }
+        }
+
+        public List<Book> GetByWriter(Writer writer)
+        {
+            try
+            {
+                return bookDal.GetByWriter(writer);
             }
             catch (Exception)
             {

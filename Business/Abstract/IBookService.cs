@@ -10,5 +10,8 @@ namespace Business.Abstract
 {
     public interface IBookService : Repository.IRepositoryService<Book>
     {
+        List<Book> GetByWriter(Writer writer);
+
+        List<Book> GetByPublisher(Publisher publisher);
     }
 }
